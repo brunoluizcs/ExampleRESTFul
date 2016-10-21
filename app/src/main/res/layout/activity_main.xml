@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.bomcodigo.examplerestful.MainActivity">
+
+    <TextView
+        android:id="@+id/titulo_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_main_activity"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/label_for_posicao"
+        android:paddingTop="18dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_for_posicao"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_below="@id/titulo_main_activity"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/edtPosicao"
+        android:paddingTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:text="1"
+        android:textSize="18dp"
+        android:layout_below="@id/titulo_main_activity"
+        android:layout_toRightOf="@+id/label_for_posicao"/>
+
+
+
+    <TextView
+        android:id="@+id/txtViewConteudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPosicao"
+        android:gravity="center"
+        android:paddingTop="18dp"/>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="#ffffff"
+            android:text="@string/txt_botao_consultar"/>
+    </LinearLayout>
+</RelativeLayout>
